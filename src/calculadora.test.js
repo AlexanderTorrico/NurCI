@@ -17,7 +17,7 @@ describe("Calculadora", ()=> {
 
 
     it("Multiplicación", ()=> {
-        expect(multiplicacion(9,9)).toBe(81);
+        expect(multiplicacion(9,9)).toBe(82);
     })
 
     
