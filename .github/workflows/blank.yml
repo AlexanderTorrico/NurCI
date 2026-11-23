@@ -27,7 +27,7 @@ jobs:
         run: |
           echo "Carpeta $(pwd)"
           echo "Usuario $(whoami)"
-          echo "Dominio $(DOMAIN)"
+          echo "Dominio $DOMAIN"
 
       - name: Mi lista
         run: ls -la
