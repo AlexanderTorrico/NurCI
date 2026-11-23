@@ -27,3 +27,7 @@ jobs:
 
       - name: Mi lista
         run: ls -la
+
+
+      - name: Mi packagejson
+        run: cat package.json
