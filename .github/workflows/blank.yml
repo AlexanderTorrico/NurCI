@@ -12,7 +12,7 @@ env:
   DOMAIN: https://miapp.com
 
 jobs:
-  build:
+  test:
     
     runs-on: ubuntu-latest
     steps:
@@ -48,3 +48,17 @@ jobs:
 
       - name: Iniciar test
         run: npm test
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Buildear aplicación
+        run: sleep 5
+  
+  despliegue:
+    needs: build
+    runs-on: ubuntu-lastest
+    steps:
+      - name: Despliegue a producción
+        run: sleep 7
