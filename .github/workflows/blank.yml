@@ -58,14 +58,14 @@ jobs:
   
   despliegue:
     needs: build
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - name: Despliegue a producción
         run: sleep 7
       
   proceso:
     needs: build
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - name: Despliegue a producción
         run: sleep 7
