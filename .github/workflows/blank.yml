@@ -62,3 +62,10 @@ jobs:
     steps:
       - name: Despliegue a producción
         run: sleep 7
+      
+  proceso:
+    needs: build
+    runs-on: ubuntu-lastest
+    steps:
+      - name: Despliegue a producción
+        run: sleep 7
